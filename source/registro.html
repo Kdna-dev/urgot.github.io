@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/common-styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul class="tab-panel">
+        <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
+        <li class="btn-tab-panel"><a href="/source/habilidades.html">Habilidades</a></li>
+        <li class="btn-tab-panel"><a href="/source/biografia.html">Biografia</a></li>
+        <li class="btn-tab-panel"><a href="/source/historia.html">Historia</a></li>
+        <li class="btn-tab-panel"><a href="/source/skins.html">Skins</a></li>
+        <li class="btn-tab-panel"><a href="/source/frases.html">Frases</a></li>
+        <li class="btn-tab-panel btn-end"><a class="btn-account" href="/source/registro.html">Ingresar</a></li>
+      </ul>
+    </header>
+    <div id="banner">
+      <img class="banner-img" src="/img/urgot-banner.jpg" alt="banner">
+      <div class="text-area">
+        <div class="text-banner">
+          <span class="title title-text-style">registro</span>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="registro">
+      <div class="login">
+        <div class="login-titulo">Log In</div>
+        <div class="formulario">
+          <form id="formulario-login" action="POST">
+            <label for="usuarioLogin">Usuario</label><input id="usuarioLogin" name="usuarioLogin" type="text"> 
+            <label for="passwordLogin">Password</label><input id="passwordLogin" name="passwordLogin" type="password"> 
+            <a href="">Olvido su password?</a>
+            <input type="submit" value="Log In">
+          </form>
+        </div>
+
+      </div>
+      <div class="signin">
+        <div class="registro-titulo">Sign Up</div>
+        <div class="formulario">
+          <form id="formulario-registro" action="POST">
+            <label for="nombreSignup">Nombre</label><input id="nombreSignup" name="nombreSignup" type="text"> 
+            <label for="apellidoSignup">Apellido</label><input id="apellidoSignup" name="apellidoSignup" type="text"> 
+            <label for="emailSignup">Email</label><input id="emailSignup" name="emailSignup" type="text"> 
+            <label for="usuarioSignup">Usuario</label><input id="usuarioSignup" name="usuarioSignup" type="text"> 
+            <label for="passwordSignup">Password</label><input id="passwordSignup" name="passwordSignup" type="password"> 
+            <label for="password-confirmSignup">Confirmar Password</label><input id="password-confirmSignup" name="password-confirmSignup" type="password"> 
+            <input type="submit" value="Sign Up">
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+      <div class="contacto">
+        <div class="contacto-titulo">Contacto</div>
+        <div class="formulario">
+          <form id="formulario-contacto" action="POST">
+            <div class="columna-contacto">
+              <label for="nombreContacto">Nombre</label><input id="nombreContacto" name="nombreContacto" type="text">
+              <label for="apellidoContacto">Apellido</label><input id="apellidoContacto" name="apellidoContacto" type="text">
+              <label for="emailContacto">Email</label><input id="emailContacto" name="emailContacto" type="text">
+              <label for="prefijoContacto">Prefijo</label><input id="prefijoContacto" name="prefijoContacto" type="text">
+              <label for="telefonoContacto">Telefono</label><input id="telefonoContacto" name="telefonoContacto" type="text">
+            </div>
+            <div class="columna-contacto">
+              <label for="comentariosContacto">Comentarios</label><textarea id="comentariosContacto" name="comentariosContacto" cols="30" rows="10"></textarea>
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

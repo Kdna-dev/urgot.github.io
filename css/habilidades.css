@@ -1,0 +1,17 @@
+/* Habilidades */
+.principal{
+    display: flex;
+    flex-direction: column;
+    color: #f9f9f9;
+}
+.habilidad-container{
+    display: flex;
+}
+
+.habilidad-container > .section-info{
+    width: 50%;
+}
+.habilidad-container > .section-video{
+    width: 50%;
+}
+/* End Habilidades */

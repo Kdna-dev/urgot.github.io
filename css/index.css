@@ -1,0 +1,140 @@
+*{
+    --son-of-ur-jpg: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("/img/son-of-ur.jpg");
+}
+
+/* #region Principal */
+.principal{
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    gap: 10px;
+}
+
+.principal-info{
+    width: 65%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.principal-info > .quote{
+    height: 200px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quote-owner{
+    color: var(--lol-main-color);
+}
+
+.principal-info > .biografia{
+    height: 400px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.biografia-corta{
+    text-align: justify;
+}
+
+.biografia-corta::first-letter{
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--lol-main-color);
+    float: left;
+    margin: 0 10px;
+    margin-top: 0;
+    line-height: 1.2;
+    padding: 0 6px;
+}
+
+.principal-aside{
+    width: 280px;
+    height: 600px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.principal-aside > .tipo-campeon{
+    min-height: 70px;
+}
+.principal-aside > .win-rate{
+    min-height: 70px;
+}
+
+.role-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.role-icon > img{
+    width: 80%;
+    height: 80%;
+}
+
+.region-campeon{
+    height: 448px;
+}
+
+.role-area{
+    height: 70px;
+    width: 210px;
+}
+
+.role-title{
+    color: var(--lol-main-color);
+}
+
+.region-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.region-icon > img{
+    width: 80%;
+    height: 80%;
+}
+
+.region-area{
+    height: 70px;
+    width: 210px;
+}
+
+.region-title{
+    color: var(--lol-main-color);
+}
+
+/* #endregion */
+
+/* #region Historia */
+.historia{
+    color: var(--lol-text-color);
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: var(--son-of-ur-jpg);
+}
+
+.historia > img {
+    max-width: 100%;
+}
+
+.historia-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia-info > p{
+    text-align: center;
+}
+
+/* #endregion */

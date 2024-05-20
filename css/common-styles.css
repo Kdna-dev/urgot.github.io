@@ -1,0 +1,179 @@
+/* #region BASICS */
+:root {
+    --lol-custom-gradient: linear-gradient(180deg,#c3a758,#6b521e);
+    --lol-main-color: #937341;
+    --lol-text-color: #c4b998;
+    --lol-background-color: #111318;
+    --lol-main-border-box: 1px solid #31271e;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A0C;
+}
+/* #endregion */
+
+/* #region HEADER */
+
+.tab-panel {
+    height: 60px;
+    padding: 0 8px;
+    background-color: #111111;
+}
+
+.btn-tab-panel {
+    height: 100%;
+    width: auto;
+    padding: 0 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-end{
+    float: right;
+}
+
+.btn-tab-panel > a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.btn-tab-panel > .btn-account{
+    color: var(--lol-main-color);
+    text-decoration: underline;
+}
+
+.btn-tab-panel:hover {
+    background-color: #f9f9f9;
+}
+
+.btn-tab-panel:hover > a {
+    color: #111111;
+}
+
+/*#endregion*/
+
+/* #region LOL COMPONENTS */
+.gradient-lol-text{
+    color: rgb(103, 71, 31);
+    font-weight: 500;
+    background: var(--lol-custom-gradient) text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.styled-lol-button{
+    height: 60px;
+    width: 200px;
+    border-image: var(--lol-custom-gradient) stretch;
+    border-style: solid;
+    color: var(--lol-main-color);
+    border-image-slice: 1;
+    background-color: #17191E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styled-lol-box{
+    background-color: var(--lol-background-color);
+    border: var(--lol-main-border-box);
+    color: var(--lol-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lol-row-box{
+    flex-direction: row;
+}
+
+.lol-column-box{
+    flex-direction: column;
+}
+/* #endregion */
+
+/* #region Banner */
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-position: top;
+    height: 500px;
+}
+
+.text-area {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.text-banner{
+    padding-bottom: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 65%, rgba(10, 10, 12, .1) 70%, #0a0a0c 90%);
+}
+
+.text-banner > .title{
+    font-size: 104px;
+    padding-top: 20px;
+}
+
+.text-banner > hr {
+    border-color: rgb(103, 71, 31);
+}
+
+.text-banner > .subtitle {
+    font-size: 24px;
+}
+
+/* #endregion */
+
+/* #region CONTACT */
+.contacto{
+    height: 300px;
+    color: #f9f9f9;
+    padding: 10px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contacto-titulo{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--lol-main-color);
+}
+
+#formulario-contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: var(--lol-text-color);
+}
+
+#formulario-contacto > .columna-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#formulario-contacto> input{
+    width: 300px;
+}
+#formulario-contacto> textarea{
+    width: 300px;
+}
+/*#endregion*/
