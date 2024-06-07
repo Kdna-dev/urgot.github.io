@@ -1,0 +1,57 @@
+/* #region CONTACT */
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.contacto{
+    height: 300px;
+    padding: 10px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.contacto-titulo{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--lol-main-color);
+}
+
+#formulario-contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: var(--lol-text-color);
+}
+
+#formulario-contacto > .columna-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+#formulario-contacto> textarea{
+    width: 300px;
+}
+
+.campos-form{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 3px;
+}
+
+.separador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: top;
+    color: var(--lol-main-color);
+}
+
+/*#endregion*/

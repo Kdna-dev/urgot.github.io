@@ -3,97 +3,143 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/habilidades.css">
+
+    <!-- #region bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- #endregion -->
+
     <link rel="stylesheet" href="../css/common-styles.css">
+    <link rel="stylesheet" href="../css/habilidades.css">
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <nav>
       <ul class="tab-panel">
         <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
-        <li class="btn-tab-panel"><a href="/source/habilidades.html">Habilidades</a></li>
-        <li class="btn-tab-panel"><a href="/source/biografia.html">Biografia</a></li>
-        <li class="btn-tab-panel"><a href="/source/historia.html">Historia</a></li>
-        <li class="btn-tab-panel"><a href="/source/skins.html">Skins</a></li>
-        <li class="btn-tab-panel"><a href="/source/frases.html">Frases</a></li>
-        <li class="btn-tab-panel btn-end"><a class="btn-account" href="/source/registro.html">Ingresar</a></li>
+        <li class="btn-tab-panel">
+          <a href="./habilidades.html">Habilidades</a>
+        </li>
+        <li class="btn-tab-panel"><a href="./biografia.html">Biografía</a></li>
+        <li class="btn-tab-panel"><a href="./historia.html">Historia</a></li>
+        <li class="btn-tab-panel"><a href="./skins.html">Skins</a></li>
+        <li class="btn-tab-panel"><a href="./frases.html">Frases</a></li>
+        <li class="btn-tab-panel btn-end">
+          <a class="btn-account" href="./registro.html">Ingresar</a>
+        </li>
       </ul>
-    </header>
-    <div id="banner">
-      <img class="banner-img" src="/img/urgot-banner.jpg" alt="banner">
+    </nav>
+    <header id="banner">
+      <img class="banner-img" src="../img/banners/urgot-banner.avif" alt="banner" />
       <div class="text-area">
         <div class="text-banner">
           <span class="title gradient-lol-text">Habilidades</span>
           <hr>
         </div>
       </div>
-    </div>
-    <div class="principal">
-      <div class="habilidad-container">
-        <div class="section-info">
-          <div class="nombre-habilidad">P: Flamas Resonantes</div>
-          <div class="info-habilidad">Los ataques básicos de Urgot y Purga hacen que sus piernas echen fuego e inflijan daño físico de forma periódica.</div>
+    </header>
+    <main class="container-fluid">
+      <section class="row skills-menu justify-content-center align-content-center">
+        <nav class="col-xs-12 col-sm-10 col-lg-8 col-xl-7 col-xxl-6">
+          <ul class="menu-skill">
+            <li><a href="#P"><img class="menu-skill-item" src="../img/skills/UrgotP.png" alt="icono de la habilidad"></a></li>
+            <li><a href="#Q"><img class="menu-skill-item" src="../img/skills/UrgotQ.png" alt="icono de la habilidad"></a></li>
+            <li><a href="#W"><img class="menu-skill-item" src="../img/skills/UrgotW.png" alt="icono de la habilidad"></a></li>
+            <li><a href="#E"><img class="menu-skill-item" src="../img/skills/UrgotE.png" alt="icono de la habilidad"></a></li>
+            <li><a href="#R"><img class="menu-skill-item" src="../img/skills/UrgotR.png" alt="icono de la habilidad"></a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="row skill-row" id="P">
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <div class="nombre-habilidad mb-3"><span><strong>P:</strong> Flamas Resonantes</span></div>
+          <div class="d-inline-flex gap-5">
+            <img class="icono-skill" loading="lazy" src="../img/skills/UrgotP.png" alt="icono de habilidad">
+            <div class="col-10 info-habilidad">Los ataques básicos de Urgot y Purga hacen que sus piernas echen fuego e inflijan daño físico de forma periódica.</div>
+          </div>
         </div>
-        <div class="section-video">
-          <video width="420" height="240" src="/video/00-P.webm" controls></video>
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <video class="lazy-video" data-src="../video/00-P.webm" controls></video>
         </div>
-      </div>
-      <div class="habilidad-container">
-        <div class="section-info">
-          <div class="nombre-habilidad">Q: Carga Corrosiva</div>
-          <div class="info-habilidad">Lanza una carga explosiva hacia la ubicación del objetivo, lo que inflige daño físico y ralentiza a los enemigos a los que alcance la explosión.</div>
+      </section>
+      <section class="row skill-row" id="Q">
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <div class="nombre-habilidad mb-3"><span><strong>Q:</strong> Carga Corrosiva</div>
+          <div class="d-inline-flex gap-5">
+            <img class="icono-skill" loading="lazy" src="../img/skills/UrgotQ.png" alt="icono de habilidad">
+            <div class="info-habilidad">Lanza una carga explosiva hacia la ubicación del objetivo, lo que inflige daño físico y ralentiza a los enemigos a los que alcance la explosión.</div>
+          </div>
         </div>
-        <div class="section-video">
-          <video width="420" height="240" src="/video/01-Q.webm" controls></video>
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <video class="lazy-video" data-src="../video/01-Q.webm" controls></video>
         </div>
-      </div>
-      <div class="habilidad-container">
-        <div class="section-info">
-          <div class="nombre-habilidad">W: Purga</div>
-          <div class="info-habilidad">Urgot se ralentiza mientras descarga su arma sobre los enemigos cercanos. Da prioridad a los campeones enemigos a los que Urgot ha golpeado con otras habilidades y activa Flamas Resonantes.</div>
+      </section>
+      <section class="row skill-row" id="W">
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <div class="nombre-habilidad mb-3"><span><strong>W:</strong> Purga</div>
+          <div class="d-inline-flex gap-5">
+            <img class="icono-skill" loading="lazy" src="../img/skills/UrgotE.png" alt="icono de habilidad">
+            <div class="info-habilidad">Urgot se ralentiza mientras descarga su arma sobre los enemigos cercanos. Da prioridad a los campeones enemigos a los que Urgot ha golpeado con otras habilidades y activa Flamas Resonantes.</div>
+          </div>
         </div>
-        <div class="section-video">
-          <video width="420" height="240" src="/video/02-E.webm" controls></video>
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <video class="lazy-video" data-src="../video/02-E.webm" controls></video>
         </div>
-      </div>
-      <div class="habilidad-container">
-        <div class="section-info">
-          <div class="nombre-habilidad">E: Desden</div>
-          <div class="info-habilidad">Urgot carga en una dirección, genera un escudo y pisotea a los enemigos que no sean campeones. Si alcanza a un campeón enemigo, se detendrá y lo apartará de su camino.</div>
+      </section>
+      <section class="row skill-row" id="E">
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <div class="nombre-habilidad mb-3"><span><strong>E:</strong> Desden</div>
+          <div class="d-inline-flex gap-5">
+            <img class="icono-skill" loading="lazy" src="../img/skills/UrgotW.png" alt="icono de habilidad">
+            <div class="info-habilidad">Urgot carga en una dirección, genera un escudo y pisotea a los enemigos que no sean campeones. Si alcanza a un campeón enemigo, se detendrá y lo apartará de su camino.</div>
+          </div>
         </div>
-        <div class="section-video">
-          <video width="420" height="240" src="/video/03-W.webm" controls></video>
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <video class="lazy-video" data-src="../video/03-W.webm" controls></video>
         </div>
-      </div>
-      <div class="habilidad-container">
-        <div class="section-info">
-          <div class="nombre-habilidad">R: Miedo de Ultratumba</div>
-          <div class="info-habilidad">Urgot dispara taladros que empalan al primer campeón enemigo que golpeen. Si ese campeón baja de cierto umbral de vida, Urgot lo considerará débil y podrá ejecutarlo.</div>
+      </section>
+      <section class="row skill-row" id="R">
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <div class="nombre-habilidad mb-3"><span><strong>R:</strong> Miedo de Ultratumba</div>
+          <div class="d-inline-flex gap-5">
+            <img class="icono-skill" loading="lazy" src="../img/skills/UrgotR.png" alt="icono de habilidad">
+            <div class="info-habilidad">Urgot dispara taladros que empalan al primer campeón enemigo que golpeen. Si ese campeón baja de cierto umbral de vida, Urgot lo considerará débil y podrá ejecutarlo.</div>
+          </div>
         </div>
-        <div class="section-video">
-          <video width="420" height="240" src="/video/04-R.webm" controls></video>
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <video class="lazy-video" data-src="../video/04-R.webm" controls></video>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <footer>
-      <div class="contacto">
-        <div class="contacto-titulo">Contacto</div>
-        <div class="formulario">
-          <form id="formulario-contacto" action="POST">
-            <div class="columna-contacto">
-              <label for="nombreContacto">Nombre</label><input id="nombreContacto" name="nombreContacto" type="text">
-              <label for="apellidoContacto">Apellido</label><input id="apellidoContacto" name="apellidoContacto" type="text">
-              <label for="emailContacto">Email</label><input id="emailContacto" name="emailContacto" type="text">
-              <label for="prefijoContacto">Prefijo</label><input id="prefijoContacto" name="prefijoContacto" type="text">
-              <label for="telefonoContacto">Telefono</label><input id="telefonoContacto" name="telefonoContacto" type="text">
-            </div>
-            <div class="columna-contacto">
-              <label for="comentariosContacto">Comentarios</label><textarea id="comentariosContacto" name="comentariosContacto" cols="30" rows="10"></textarea>
-              <input type="submit" value="Enviar">
-            </div>
-          </form>
-        </div>
-      </div>
+      <contacto-component></contacto-component>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let lazyVideos = [].slice.call(document.querySelectorAll('video.lazy-video'));
+
+        if ('IntersectionObserver' in window) {
+          let lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                let lazyVideo = entry.target;
+                lazyVideo.src = lazyVideo.dataset.src;
+                lazyVideo.classList.remove('lazy-video');
+                lazyVideoObserver.unobserve(lazyVideo);
+              }
+            });
+          });
+
+          lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+          });
+        } else {
+          // Fallback para navegadores que no soportan IntersectionObserver
+          lazyVideos.forEach(function (lazyVideo) {
+            lazyVideo.src = lazyVideo.dataset.src;
+          });
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,17 +1,62 @@
 /* Habilidades */
-.principal{
-    display: flex;
-    flex-direction: column;
-    color: #f9f9f9;
-}
-.habilidad-container{
-    display: flex;
+
+*{
+    color: var(--lol-text-color);
 }
 
-.habilidad-container > .section-info{
-    width: 50%;
+.skills-menu{
+    background-color: var(--lol-background-color);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--lol-main-color);
+    position:sticky;
+    top: 0;
 }
-.habilidad-container > .section-video{
-    width: 50%;
+
+.skills-menu > nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.menu-skill-item {
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    border: 1px solid var(--lol-main-color);
+}
+
+.menu-skill:has(> :hover){
+    .menu-skill-item:not(:hover) {
+        opacity: 0.5;
+    }
+}
+
+.skill-row{
+    padding: 145px 20px;
+    min-height: 600px;
+}
+
+.skill-row:nth-child(odd){
+    background-color: var(--lol-background-color);
+}
+
+.nombre-habilidad > span > strong{
+    font-size: 1.2em;
+    color: var(--lol-main-color);
+}
+
+.icono-skill{
+    height: 100px;
+    aspect-ratio: 1/1;
+}
+
+video{
+    width: min(100%, 420px);
+    aspect-ratio: 16/9;
 }
 /* End Habilidades */

@@ -1,5 +1,6 @@
 /* #region BASICS */
 :root {
+    --body-background: #0A0A0C;
     --lol-custom-gradient: linear-gradient(180deg,#c3a758,#6b521e);
     --lol-main-color: #937341;
     --lol-text-color: #c4b998;
@@ -10,10 +11,14 @@
     box-sizing: border-box;
 }
 
+*{
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #0A0A0C;
+    background-color: var(--body-background);
 }
 /* #endregion */
 
@@ -81,6 +86,11 @@ body {
     align-items: center;
 }
 
+.styled-lol-button > a {
+    text-decoration: none;
+    color: var(--lol-main-color);
+}
+
 .styled-lol-box{
     background-color: var(--lol-background-color);
     border: var(--lol-main-border-box);
@@ -106,7 +116,7 @@ body {
     object-fit: cover;
     aspect-ratio: 16/9;
     object-position: top;
-    height: 500px;
+    max-height: 350px;
 }
 
 .text-area {
@@ -127,53 +137,17 @@ body {
 }
 
 .text-banner > .title{
-    font-size: 104px;
+    font-size: clamp(16px, 10vw, 100px);
     padding-top: 20px;
 }
 
-.text-banner > hr {
+hr {
     border-color: rgb(103, 71, 31);
 }
 
 .text-banner > .subtitle {
     font-size: 24px;
+    word-wrap: break-word;
 }
 
 /* #endregion */
-
-/* #region CONTACT */
-.contacto{
-    height: 300px;
-    color: #f9f9f9;
-    padding: 10px 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.contacto-titulo{
-    font-size: 22px;
-    font-weight: 500;
-    color: var(--lol-main-color);
-}
-
-#formulario-contacto{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    color: var(--lol-text-color);
-}
-
-#formulario-contacto > .columna-contacto{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-#formulario-contacto> input{
-    width: 300px;
-}
-#formulario-contacto> textarea{
-    width: 300px;
-}
-/*#endregion*/

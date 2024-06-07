@@ -8,26 +8,30 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <nav>
       <ul class="tab-panel">
         <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
-        <li class="btn-tab-panel"><a href="/source/habilidades.html">Habilidades</a></li>
-        <li class="btn-tab-panel"><a href="/source/biografia.html">Biografia</a></li>
-        <li class="btn-tab-panel"><a href="/source/historia.html">Historia</a></li>
-        <li class="btn-tab-panel"><a href="/source/skins.html">Skins</a></li>
-        <li class="btn-tab-panel"><a href="/source/frases.html">Frases</a></li>
-        <li class="btn-tab-panel btn-end"><a class="btn-account" href="/source/registro.html">Ingresar</a></li>
+        <li class="btn-tab-panel">
+          <a href="./habilidades.html">Habilidades</a>
+        </li>
+        <li class="btn-tab-panel"><a href="./biografia.html">Biografía</a></li>
+        <li class="btn-tab-panel"><a href="./historia.html">Historia</a></li>
+        <li class="btn-tab-panel"><a href="./skins.html">Skins</a></li>
+        <li class="btn-tab-panel"><a href="./frases.html">Frases</a></li>
+        <li class="btn-tab-panel btn-end">
+          <a class="btn-account" href="./registro.html">Ingresar</a>
+        </li>
       </ul>
-    </header>
-    <div id="banner">
-      <img class="banner-img" src="/img/urgot-banner.jpg" alt="banner">
+    </nav>
+    <header id="banner">
+      <img class="banner-img" src="../img/banners/urgot-banner.avif" alt="banner" />
       <div class="text-area">
         <div class="text-banner">
           <span class="title title-text-style gradient-lol-text">Frases</span>
           <hr>
         </div>
       </div>
-    </div>
+    </header>
     <div class="historia">
       <div class="historia-info">
         <p>Quiebra a los hombres para quebrar sus cadenas.</p>
@@ -161,24 +165,7 @@
       </div>
     </div>
     <footer>
-      <div class="contacto">
-        <div class="contacto-titulo">Contacto</div>
-        <div class="formulario">
-          <form id="formulario-contacto" action="POST">
-            <div class="columna-contacto">
-              <label for="nombreContacto">Nombre</label><input id="nombreContacto" name="nombreContacto" type="text">
-              <label for="apellidoContacto">Apellido</label><input id="apellidoContacto" name="apellidoContacto" type="text">
-              <label for="emailContacto">Email</label><input id="emailContacto" name="emailContacto" type="text">
-              <label for="prefijoContacto">Prefijo</label><input id="prefijoContacto" name="prefijoContacto" type="text">
-              <label for="telefonoContacto">Telefono</label><input id="telefonoContacto" name="telefonoContacto" type="text">
-            </div>
-            <div class="columna-contacto">
-              <label for="comentariosContacto">Comentarios</label><textarea id="comentariosContacto" name="comentariosContacto" cols="30" rows="10"></textarea>
-              <input type="submit" value="Enviar">
-            </div>
-          </form>
-        </div>
-      </div>
+      <contacto-component></contacto-component>
     </footer>
   </body>
 </html>

@@ -1,0 +1,48 @@
+.input-group{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    position: relative;
+}
+
+.input{
+    all: unset;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--lol-main-color);
+    color: var(--lol-text-color);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label{
+    color: var(--lol-text-color);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    pointer-events: none;
+    background-color: #0A0A0C;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus{
+    border: 1px solid var(--lol-main-color);
+    background-color: #0A0A0C;
+}
+
+.input:is(:focus, :valid) ~ label{
+    transform: translateY(-110%) scale(0.8);
+    -webkit-transform: translateY(-110%) scale(0.8);
+    -moz-transform: translateY(-110%) scale(0.8);
+    -ms-transform: translateY(-110%) scale(0.8);
+    -o-transform: translateY(-110%) scale(0.8);
+    background-color: var(--body-background);
+    padding-inline: 0.3rem;
+    color: var(--lol-main-color);
+}
