@@ -49,55 +49,31 @@ body {
 }
 
 .principal-aside{
-    height: 600px;
-    min-height: auto;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
 }
 
-.principal-aside > .tipo-campeon{
-    min-height: 70px;
-}
-.principal-aside > .win-rate{
-    min-height: 70px;
+.principal-aside > .aside-info{
+    min-height: 75px;
 }
 
-.role-icon{
-    width: 70px;
-    height: 70px;
+.aside-icon-box{
+    width: 75px;
+    height: 75px;
 }
 
-.role-icon > img{
-    width: 80%;
-    height: 80%;
+.aside-icon-box > img{
+    height: 60px;
+    aspect-ratio: 1/1;
 }
 
-.region-campeon{
-    height: 468px;
-}
-
-.role-area{
-    height: 70px;
-    width: 210px;
+.aside-text-box{
+    height: 75px;
 }
 
 .role-title{
     color: var(--lol-main-color);
-}
-
-.region-icon{
-    width: 70px;
-    height: 70px;
-}
-
-.region-icon > img{
-    width: 80%;
-    height: 80%;
-}
-
-.region-area{
-    height: 70px;
-    width: 210px;
 }
 
 .region-title{
