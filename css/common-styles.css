@@ -146,7 +146,7 @@ hr {
 }
 
 .text-banner > .subtitle {
-    font-size: 24px;
+    font-size: clamp(14px, 5vw, 24px);;
     word-wrap: break-word;
 }
 

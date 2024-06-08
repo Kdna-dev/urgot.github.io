@@ -13,16 +13,24 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="tab-panel">
-        <li class="btn-tab-panel"><a href="./index.html">Inicio</a></li>
-        <li class="btn-tab-panel"><a href="./source/habilidades.html">Habilidades</a></li>
-        <li class="btn-tab-panel"><a href="./source/biografia.html">Biografía</a></li>
-        <li class="btn-tab-panel"><a href="./source/historia.html">Historia</a></li>
-        <li class="btn-tab-panel"><a href="./source/skins.html">Skins</a></li>
-        <li class="btn-tab-panel"><a href="./source/frases.html">Frases</a></li>
-        <li class="btn-tab-panel btn-end"><a class="btn-account" href="./source/registro.html">Ingresar</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/icons/Urgot_OriginalCircle.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="tab-panel">
+            <li class="btn-tab-panel"><a href="./index.html">Inicio</a></li>
+            <li class="btn-tab-panel"><a href="./source/habilidades.html">Habilidades</a></li>
+            <li class="btn-tab-panel"><a href="./source/biografia.html">Biografía</a></li>
+            <li class="btn-tab-panel"><a href="./source/historia.html">Historia</a></li>
+            <li class="btn-tab-panel"><a href="./source/skins.html">Skins</a></li>
+            <li class="btn-tab-panel"><a href="./source/frases.html">Frases</a></li>
+            <li class="btn-tab-panel btn-end"><a class="btn-account" href="./source/registro.html">Ingresar</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header id="banner">
       <img class="banner-img" src="./img/banners/urgot-banner.avif" alt="banner">
@@ -42,9 +50,13 @@
               <p class="urgot-quote">Este dolor... es un regalo.</p>
               <span class="quote-owner">~ Urgot</span>
             </div>
-            <div class="biografia styled-lol-box lol-column-box">
-              <p class="biografia-corta">Urgot, quien fue alguna vez un poderoso verdugo noxiano, había sido traicionado por el imperio que lo hizo matar a tantos en su nombre. Atado con cadenas de hierro, lo forzaron a aprender el verdadero significado de la fuerza en el Dragado, una mina de prisioneros en las profundidades de Zaun, de donde emergió como un desastre que propaga caos por toda la ciudad y proyecta una imponente sombra sobre el submundo criminal. Levantando a sus víctimas con las mismas cadenas que alguna vez lo esclavizaron, purgará su nuevo hogar de los indignos y lo convertirá en un crisol de dolor.</p>
-              <button class="styled-lol-button" ">Leer biografía</button>
+            <div class="container biografia styled-lol-box lol-column-box">
+              <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-10 d-flex flex-column align-items-center">
+                  <p class="biografia-corta p-5">Urgot, quien fue alguna vez un poderoso verdugo noxiano, había sido traicionado por el imperio que lo hizo matar a tantos en su nombre. Atado con cadenas de hierro, lo forzaron a aprender el verdadero significado de la fuerza en el Dragado, una mina de prisioneros en las profundidades de Zaun, de donde emergió como un desastre que propaga caos por toda la ciudad y proyecta una imponente sombra sobre el submundo criminal. Levantando a sus víctimas con las mismas cadenas que alguna vez lo esclavizaron, purgará su nuevo hogar de los indignos y lo convertirá en un crisol de dolor.</p>
+                  <button class="styled-lol-button mb-5">Leer biografía</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="principal-aside col-sm-12 col-xl-4 mb-3">

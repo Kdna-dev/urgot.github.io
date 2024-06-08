@@ -29,7 +29,6 @@ body {
 
 .principal-info > .biografia{
     min-height: 400px;
-    padding: 0 100px;
     display: flex;
     justify-content: space-evenly;
 }
