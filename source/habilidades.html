@@ -13,20 +13,24 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="tab-panel">
-        <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
-        <li class="btn-tab-panel">
-          <a href="./habilidades.html">Habilidades</a>
-        </li>
-        <li class="btn-tab-panel"><a href="./biografia.html">Biografía</a></li>
-        <li class="btn-tab-panel"><a href="./historia.html">Historia</a></li>
-        <li class="btn-tab-panel"><a href="./skins.html">Skins</a></li>
-        <li class="btn-tab-panel"><a href="./frases.html">Frases</a></li>
-        <li class="btn-tab-panel btn-end">
-          <a class="btn-account" href="./registro.html">Ingresar</a>
-        </li>
-      </ul>
+    <nav id="menuPrincipal" class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../img/icons/Urgot_OriginalCircle.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 mt-2 mb-2">
+            <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
+            <li class="btn-tab-panel"><a href="../source/habilidades.html">Habilidades</a></li>
+            <li class="btn-tab-panel"><a href="../source/biografia.html">Biografía</a></li>
+            <li class="btn-tab-panel"><a href="../source/historia.html">Historia</a></li>
+            <li class="btn-tab-panel"><a href="../source/skins.html">Skins</a></li>
+            <li class="btn-tab-panel me-md-auto"><a href="../source/frases.html">Frases</a></li>
+            <li class="btn-tab-panel"><a class="btn-account" href="../source/registro.html">Ingresar</a></li>
+          </ul>
+        <div>
+      <div>
     </nav>
     <header id="banner">
       <img class="banner-img" src="../img/banners/urgot-banner.avif" alt="banner" />
@@ -50,63 +54,63 @@
         </nav>
       </section>
       <section class="row skill-row" id="P">
-        <div class="col-sm-12 col-xl-6 mb-3">
+        <div class="col-sm-12 col-xl-5 mb-5">
           <div class="nombre-habilidad mb-3"><span><strong>P:</strong> Flamas Resonantes</span></div>
           <div class="d-inline-flex gap-5">
             <img class="icono-skill" loading="lazy" src="../img/skills/UrgotP.png" alt="icono de habilidad">
-            <div class="col-10 info-habilidad">Los ataques básicos de Urgot y Purga hacen que sus piernas echen fuego e inflijan daño físico de forma periódica.</div>
+            <div class="info-habilidad">Los ataques básicos de Urgot y Purga hacen que sus piernas echen fuego e inflijan daño físico de forma periódica.</div>
           </div>
         </div>
-        <div class="col-sm-12 col-xl-6 mb-3">
-          <video class="lazy-video" data-src="../video/00-P.webm" controls></video>
+        <div class="col-sm-12 col-xl-7 ps-xl-3">
+          <video class="w-100 lazy-video" data-src="../video/00-P.webm" controls></video>
         </div>
       </section>
       <section class="row skill-row" id="Q">
-        <div class="col-sm-12 col-xl-6 mb-3">
+        <div class="col-sm-12 col-xl-5 mb-5">
           <div class="nombre-habilidad mb-3"><span><strong>Q:</strong> Carga Corrosiva</div>
           <div class="d-inline-flex gap-5">
             <img class="icono-skill" loading="lazy" src="../img/skills/UrgotQ.png" alt="icono de habilidad">
             <div class="info-habilidad">Lanza una carga explosiva hacia la ubicación del objetivo, lo que inflige daño físico y ralentiza a los enemigos a los que alcance la explosión.</div>
           </div>
         </div>
-        <div class="col-sm-12 col-xl-6 mb-3">
-          <video class="lazy-video" data-src="../video/01-Q.webm" controls></video>
+        <div class="col-sm-12 col-xl-7 ps-xl-3">
+          <video class="w-100 lazy-video" data-src="../video/01-Q.webm" controls></video>
         </div>
       </section>
       <section class="row skill-row" id="W">
-        <div class="col-sm-12 col-xl-6 mb-3">
+        <div class="col-sm-12 col-xl-5 mb-5">
           <div class="nombre-habilidad mb-3"><span><strong>W:</strong> Purga</div>
           <div class="d-inline-flex gap-5">
             <img class="icono-skill" loading="lazy" src="../img/skills/UrgotE.png" alt="icono de habilidad">
             <div class="info-habilidad">Urgot se ralentiza mientras descarga su arma sobre los enemigos cercanos. Da prioridad a los campeones enemigos a los que Urgot ha golpeado con otras habilidades y activa Flamas Resonantes.</div>
           </div>
         </div>
-        <div class="col-sm-12 col-xl-6 mb-3">
-          <video class="lazy-video" data-src="../video/02-E.webm" controls></video>
+        <div class="col-sm-12 col-xl-7 ps-xl-3">
+          <video class="w-100 lazy-video" data-src="../video/02-E.webm" controls></video>
         </div>
       </section>
       <section class="row skill-row" id="E">
-        <div class="col-sm-12 col-xl-6 mb-3">
+        <div class="col-sm-12 col-xl-5 mb-5">
           <div class="nombre-habilidad mb-3"><span><strong>E:</strong> Desden</div>
           <div class="d-inline-flex gap-5">
             <img class="icono-skill" loading="lazy" src="../img/skills/UrgotW.png" alt="icono de habilidad">
             <div class="info-habilidad">Urgot carga en una dirección, genera un escudo y pisotea a los enemigos que no sean campeones. Si alcanza a un campeón enemigo, se detendrá y lo apartará de su camino.</div>
           </div>
         </div>
-        <div class="col-sm-12 col-xl-6 mb-3">
-          <video class="lazy-video" data-src="../video/03-W.webm" controls></video>
+        <div class="col-sm-12 col-xl-7 ps-xl-3">
+          <video class="w-100 lazy-video" data-src="../video/03-W.webm" controls></video>
         </div>
       </section>
       <section class="row skill-row" id="R">
-        <div class="col-sm-12 col-xl-6 mb-3">
+        <div class="col-sm-12 col-xl-5 mb-5">
           <div class="nombre-habilidad mb-3"><span><strong>R:</strong> Miedo de Ultratumba</div>
           <div class="d-inline-flex gap-5">
             <img class="icono-skill" loading="lazy" src="../img/skills/UrgotR.png" alt="icono de habilidad">
             <div class="info-habilidad">Urgot dispara taladros que empalan al primer campeón enemigo que golpeen. Si ese campeón baja de cierto umbral de vida, Urgot lo considerará débil y podrá ejecutarlo.</div>
           </div>
         </div>
-        <div class="col-sm-12 col-xl-6 mb-3">
-          <video class="lazy-video" data-src="../video/04-R.webm" controls></video>
+        <div class="col-sm-12 col-xl-7 ps-xl-3">
+          <video class="w-100 lazy-video" data-src="../video/04-R.webm" controls></video>
         </div>
       </section>
     </main>

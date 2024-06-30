@@ -4,12 +4,20 @@
     color: var(--lol-text-color);
 }
 
+#banner{
+    margin-bottom: -75px;
+    z-index: 2;
+    position: relative;
+}
+
 .skills-menu{
     background-color: var(--lol-background-color);
     padding: 15px 0;
     border-bottom: 1px solid var(--lol-main-color);
     position:sticky;
-    top: 0;
+    padding-top: 90px;
+    top: 0px;
+    z-index: 1;
 }
 
 .skills-menu > nav > ul{
@@ -37,8 +45,8 @@
 }
 
 .skill-row{
-    padding: 145px 20px;
-    min-height: 600px;
+    padding: 60px 30px;
+    min-height: 480px;
 }
 
 .skill-row:nth-child(odd){
@@ -56,7 +64,6 @@
 }
 
 video{
-    width: min(100%, 420px);
     aspect-ratio: 16/9;
 }
 /* End Habilidades */
