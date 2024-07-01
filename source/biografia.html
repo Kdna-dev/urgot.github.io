@@ -3,28 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- #region bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- #endregion -->
+
+    <!-- #region fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- #endregion -->
+
     <link rel="stylesheet" href="../css/historia.css">
     <link rel="stylesheet" href="../css/common-styles.css">
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="tab-panel">
-        <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
-        <li class="btn-tab-panel">
-          <a href="./habilidades.html">Habilidades</a>
-        </li>
-        <li class="btn-tab-panel"><a href="./biografia.html">Biografía</a></li>
-        <li class="btn-tab-panel"><a href="./historia.html">Historia</a></li>
-        <li class="btn-tab-panel"><a href="./skins.html">Skins</a></li>
-        <li class="btn-tab-panel"><a href="./frases.html">Frases</a></li>
-        <li class="btn-tab-panel btn-end">
-          <a class="btn-account" href="./registro.html">Ingresar</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/icons/Urgot_OriginalCircle.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100">
+            <li class="btn-tab-panel"><a href="../index.html">Inicio</a></li>
+            <li class="btn-tab-panel"><a href="../source/habilidades.html">Habilidades</a></li>
+            <li class="btn-tab-panel"><a href="../source/biografia.html">Biografía</a></li>
+            <li class="btn-tab-panel"><a href="../source/historia.html">Historia</a></li>
+            <li class="btn-tab-panel me-md-auto"><a href="../source/skins.html">Skins</a></li>
+            <li class="btn-tab-panel"><a class="btn-account" href="../source/registro.html">Ingresar</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header id="banner">
-      <img class="banner-img" src="../img/banners/urgot-banner.avif" alt="banner" />
+      <img class="banner-img" src="../img/banners/urgot-banner.avif" alt="banner">
       <div class="text-area">
         <div class="text-banner">
           <span class="title title-text-style gradient-lol-text">Biografia</span>
@@ -32,116 +44,145 @@
         </div>
       </div>
     </header>
-    <div class="historia">
-      <div class="historia-info">
-        <h3 class="titulo">Urgot</h3>
-        <h4 class="subtitulo">El temerario</h4>
-        <p>Urgot siempre pensó que era digno.</p>
-        <p>
-          Como verdugo y asesino de los débiles, era la viva encarnación del ideal
-          noxiano en el que la fuerza debe dominar, algo que llevaba a cabo con
-          cada golpe de su hacha. Su orgullo crecía conforme los cuerpos se
-          apilaban a una mayor altura detrás de él, y su intimidante presencia
-          mantenía atemorizados a innumerables grupos de guerra.
-        </p>
-        <p>
-          Aun así, una sola palabra bastó para sellar su destino. Enviado al
-          distante Zaun para eliminar a una supuesta conspiración contra el
-          gobernante de Noxus, Urgot se dio cuenta muy tarde que la misión era una
-          trampa para expulsarlo de la capital mientras el usurpador Swain tomaba
-          el control. Rodeado por agentes de los quimobarones y enfurecido porque
-          todo lo que había creído era una mentira, llevaron a Urgot a las minas
-          tecnoquímicas debajo de Zaun. Fue derrotado y esclavizado. Al parecer,
-          ya no era digno.
-        </p>
-        <p>
-          En el Dragado, la muerte podía presentarse de muchas maneras. Urgot
-          soportó las infernales condiciones de las minas en un silencio sombrío
-          mientras aguardaba la suya.
-        </p>
-        <p>
-          La Baronesa Voss, guardia de la mina, en ocasiones prometía liberar a
-          los prisioneros a cambio de una tortuosa confesión. Al final,
-          encontraban la libertad bajo el filo de su espada. Los gritos que
-          resonaban por los túneles instruyeron a Urgot sobre las maravillas de
-          Zaun. Había algo especial en la ciudad, algo magnífico y evidente,
-          incluso en los secretos que se derramaban por gargantas degolladas.
-          Urgot no sabía lo que era hasta que, finalmente, fue llevado ante Voss
-          para que lo quebrantara.
-        </p>
-        <p>
-          Pero en cuanto la cuchilla de la baronesa se abrió paso por su piel,
-          Urgot comprendió que su cuerpo ya estaba devastado por una agonía que
-          iba más allá de cualquier daño que Voss pudiera infligirle. El Dragado
-          lo había hecho más fuerte de lo que alguna vez fue como verdugo.
-        </p>
-        <p>
-          El dolor era el secreto de Zaun. Su risa ahuyentó a Voss hasta la
-          superficie, y un reinado de anarquía comenzó en las profundidades.
-        </p>
-        <p>
-          Tras tomar el control de la prisión, Urgot se deleitó con nuevas pruebas
-          de supervivencia. Detectó las partes más débiles de su cuerpo y las
-          reemplazó con maquinaria que encontró; tecnología creada por aquellos
-          que morirían sin ella. La necesidad es la madre del dolor.
-        </p>
-        <p>
-          Los guardias no podían acceder a las áreas que Urgot había confiscado
-          del dominio de Voss. Los mismos prisioneros estaban más atemorizados de
-          su nuevo amo de lo que estaban de ella. Algunos incluso desarrollaron un
-          respeto fanático por Urgot, tras ser forzados a escuchar sus febriles
-          sermones sobre la naturaleza del poder mientras su puño se apretaba
-          alrededor de los cuellos de quienes se negaban a escuchar.
-        </p>
-        <p>
-          Cuando un agente noxiano llegó al Dragado, Urgot se vio forzado a
-          enfrentar su propio pasado finalmente. Aunque el espía lo reconoció y
-          buscó ayuda para lograr escapar, Urgot lo atacó despiadadamente y arrojó
-          su cuerpo destrozado a la oscuridad.
-        </p>
-        <p>
-          No era la fuerza la que dominaba Noxus, comprendió Urgot, sino los
-          hombres... y los hombres eran débiles. No deberían existir gobernantes,
-          ni mentiras, nada que interfiriera con el caos puro de la supervivencia.
-          Comenzando un disturbio que encendió una vena tecnoquímica dentro de la
-          mina, Urgot estremeció a la ciudad de arriba y resquebrajó la prisión
-          con una explosión de la misma magnitud que la del nacimiento de Zaun.
-          Varios prisioneros murieron y otros miles huyeron hacia el sumidero.
-          Pero, como siempre, los dignos sobrevivieron.
-        </p>
-        <p>
-          A partir de ese día, el reino del terror de Urgot continuó con su
-          expansión. Esta abominable fusión de maquinaria industrial y brutalidad
-          noxiana aniquiló a los quimobarones y a sus lacayos, uno por uno, y
-          reunió a su propio séquito formado por los oprimidos de Zaun. Se decía
-          que él sería un nuevo salvador, alguien que quitaría el yugo opresor del
-          cuello de los zaunitas comunes.
-        </p>
-        <p>
-          No obstante, sus acciones no hallaron correspondencia en tales dichos:
-          Urgot probó la valía de sumisos y poderosos por igual. Para aquellos que
-          fueran perdonados en sus pruebas mortales, su mensaje estaba claro: él
-          no estaba ahí para guiar, sino para sobrevivir. Si los demás eran
-          dignos, también sobrevivirían.
-        </p>
-        <p>
-          Cuando Urgot finalmente atacó a los representantes de los clanes
-          mercantiles piltovianos, los Protectores se vieron forzados a intervenir
-          y lo arrastraron encadenado a una celda fortificada. Sin embargo, este
-          gesto no hizo más que confirmar al ''Temerario'' como una leyenda entre
-          los pandilleros, los chicos del sumidero y los olvidados.
-        </p>
-        <p>
-          Dado que Piltóver no es la primera sociedad que encarcela a Urgot, es
-          válido preguntarse si existe alguna jaula capaz de contenerlo.
-        </p>
-        <div class="go-to-biografia">
-          <button class="styled-lol-button">Leer historia de Urgot</button>
+    <main class="historia container-fluid">
+      <section class="row d-flex justify-content-md-center">
+        <div class="col-sm-12 col-md-9 col-xl-6 historia-info">
+          <h3 class="titulo mb-3">Urgot</h3>
+          <h4 class="subtitulo mb-5">El temerario</h4>
+          <p>Urgot siempre pensó que era digno.</p>
+          <p>
+            Como verdugo y asesino de los débiles, era la viva encarnación del ideal
+            noxiano en el que la fuerza debe dominar, algo que llevaba a cabo con
+            cada golpe de su hacha. Su orgullo crecía conforme los cuerpos se
+            apilaban a una mayor altura detrás de él, y su intimidante presencia
+            mantenía atemorizados a innumerables grupos de guerra.
+          </p>
+          <p>
+            Aun así, una sola palabra bastó para sellar su destino. Enviado al
+            distante Zaun para eliminar a una supuesta conspiración contra el
+            gobernante de Noxus, Urgot se dio cuenta muy tarde que la misión era una
+            trampa para expulsarlo de la capital mientras el usurpador Swain tomaba
+            el control. Rodeado por agentes de los quimobarones y enfurecido porque
+            todo lo que había creído era una mentira, llevaron a Urgot a las minas
+            tecnoquímicas debajo de Zaun. Fue derrotado y esclavizado. Al parecer,
+            ya no era digno.
+          </p>
+          <p>
+            En el Dragado, la muerte podía presentarse de muchas maneras. Urgot
+            soportó las infernales condiciones de las minas en un silencio sombrío
+            mientras aguardaba la suya.
+          </p>
+          <p>
+            La Baronesa Voss, guardia de la mina, en ocasiones prometía liberar a
+            los prisioneros a cambio de una tortuosa confesión. Al final,
+            encontraban la libertad bajo el filo de su espada. Los gritos que
+            resonaban por los túneles instruyeron a Urgot sobre las maravillas de
+            Zaun. Había algo especial en la ciudad, algo magnífico y evidente,
+            incluso en los secretos que se derramaban por gargantas degolladas.
+            Urgot no sabía lo que era hasta que, finalmente, fue llevado ante Voss
+            para que lo quebrantara.
+          </p>
+          <p>
+            Pero en cuanto la cuchilla de la baronesa se abrió paso por su piel,
+            Urgot comprendió que su cuerpo ya estaba devastado por una agonía que
+            iba más allá de cualquier daño que Voss pudiera infligirle. El Dragado
+            lo había hecho más fuerte de lo que alguna vez fue como verdugo.
+          </p>
+          <p>
+            El dolor era el secreto de Zaun. Su risa ahuyentó a Voss hasta la
+            superficie, y un reinado de anarquía comenzó en las profundidades.
+          </p>
+          <p>
+            Tras tomar el control de la prisión, Urgot se deleitó con nuevas pruebas
+            de supervivencia. Detectó las partes más débiles de su cuerpo y las
+            reemplazó con maquinaria que encontró; tecnología creada por aquellos
+            que morirían sin ella. La necesidad es la madre del dolor.
+          </p>
+          <p>
+            Los guardias no podían acceder a las áreas que Urgot había confiscado
+            del dominio de Voss. Los mismos prisioneros estaban más atemorizados de
+            su nuevo amo de lo que estaban de ella. Algunos incluso desarrollaron un
+            respeto fanático por Urgot, tras ser forzados a escuchar sus febriles
+            sermones sobre la naturaleza del poder mientras su puño se apretaba
+            alrededor de los cuellos de quienes se negaban a escuchar.
+          </p>
+          <p>
+            Cuando un agente noxiano llegó al Dragado, Urgot se vio forzado a
+            enfrentar su propio pasado finalmente. Aunque el espía lo reconoció y
+            buscó ayuda para lograr escapar, Urgot lo atacó despiadadamente y arrojó
+            su cuerpo destrozado a la oscuridad.
+          </p>
+          <p>
+            No era la fuerza la que dominaba Noxus, comprendió Urgot, sino los
+            hombres... y los hombres eran débiles. No deberían existir gobernantes,
+            ni mentiras, nada que interfiriera con el caos puro de la supervivencia.
+            Comenzando un disturbio que encendió una vena tecnoquímica dentro de la
+            mina, Urgot estremeció a la ciudad de arriba y resquebrajó la prisión
+            con una explosión de la misma magnitud que la del nacimiento de Zaun.
+            Varios prisioneros murieron y otros miles huyeron hacia el sumidero.
+            Pero, como siempre, los dignos sobrevivieron.
+          </p>
+          <p>
+            A partir de ese día, el reino del terror de Urgot continuó con su
+            expansión. Esta abominable fusión de maquinaria industrial y brutalidad
+            noxiana aniquiló a los quimobarones y a sus lacayos, uno por uno, y
+            reunió a su propio séquito formado por los oprimidos de Zaun. Se decía
+            que él sería un nuevo salvador, alguien que quitaría el yugo opresor del
+            cuello de los zaunitas comunes.
+          </p>
+          <p>
+            No obstante, sus acciones no hallaron correspondencia en tales dichos:
+            Urgot probó la valía de sumisos y poderosos por igual. Para aquellos que
+            fueran perdonados en sus pruebas mortales, su mensaje estaba claro: él
+            no estaba ahí para guiar, sino para sobrevivir. Si los demás eran
+            dignos, también sobrevivirían.
+          </p>
+          <p>
+            Cuando Urgot finalmente atacó a los representantes de los clanes
+            mercantiles piltovianos, los Protectores se vieron forzados a intervenir
+            y lo arrastraron encadenado a una celda fortificada. Sin embargo, este
+            gesto no hizo más que confirmar al ''Temerario'' como una leyenda entre
+            los pandilleros, los chicos del sumidero y los olvidados.
+          </p>
+          <p>
+            Dado que Piltóver no es la primera sociedad que encarcela a Urgot, es
+            válido preguntarse si existe alguna jaula capaz de contenerlo.
+          </p>
+          <div class="go-to-biografia">
+            <button class="styled-lol-button">Leer historia de Urgot</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <hr>
+      <div class="row justify-content-center">
+        <div id="social-media" class="col-12 col-lg-6 col-xl-4 text-center d-flex justify-content-evenly mb-3">
+          <a href="https://www.instagram.com/kdna.dev/" target="_blank">
+            <i class="fab fa-instagram"></i>
+            Kdna.dev
+          </a>
+          <a href="https://github.com/Kdna-dev" target="_blank">
+            <i class="fab fa-github"></i>
+            Kdna-dev
+          </a>
+          <a href="https://www.linkedin.com/in/kdna/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            Kdna
+          </a>
         </div>
       </div>
-    </div>
-    <footer>
-      <contacto-component></contacto-component>
-    </footer>
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <p>&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>    
+       
+    <!-- #region SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- #endregion -->
+
   </body>
 </html>

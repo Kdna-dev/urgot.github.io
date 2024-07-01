@@ -1,54 +1,4 @@
-/* Banner */
-
-.banner-img {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    height: 300px;
-    aspect-ratio: 16/9;
-}
-
-.text-area {
-    height: 100%;
-    position: relative;
-    width: 100%;
-}
-
-.text-banner{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    width: 100%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 65%, rgba(10, 10, 12, .1) 70%, #0a0a0c 90%);
-}
-
-.text-banner > .title-text-style{
-    color: rgb(103, 71, 31);
-    font-weight: 500;
-    background: -webkit-linear-gradient(bottom, rgb(103, 71, 31), rgb(203, 172, 98)) text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-}
-
-.text-banner > .title{
-    font-size: 104px;
-    padding-top: 20px;
-}
-
-.text-banner > hr {
-    border-color: rgb(103, 71, 31);
-}
-
-.text-banner > .subtitle {
-    font-size: 24px;
-}
-
-/* End Banner */
-
-/* Habilidades */
+/* #region Skins */
 .principal{
     display: flex;
     flex-direction: column;
@@ -56,26 +6,14 @@
 .skin-container{
     display: flex;
     flex-direction: column;
-}
-.skin-background-container{
-    width: 100%;
-}
-
-.skin-background-container > img{
-    width: 100%;
-    aspect-ratio: 16/9;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    object-fit: cover;
-    opacity: 0.7;
+    padding: 30px 0;
 }
 
 .skin-info-container{
-    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
-    aspect-ratio: 16/9;
+    padding: 20px 50px;
 }
 
 .nombre-skin{
@@ -88,5 +26,58 @@
     flex-direction: row;
 }
 
-/* End Habilidades */
+.main-sprite > img{
+    aspect-ratio: 1/1;
+}
 
+.chromas img{
+    aspect-ratio: 1/1;
+}
+
+/* #endregion */
+
+ /* #region Backgrounds */
+
+ *{
+    --urgot-original: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_OriginalSkin.avif");
+    --urgot-carnicero: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_ButcherSkin.avif");
+    --urgot-crabgot: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_GiantEnemyCrabgotSkin.avif");
+    --urgot-cosplay: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_PajamaGuardianCosplaySkin.avif");
+    --urgot-terror: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_FrightNightSkin.avif");
+    --urgot-belico: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_BattlecastSkin.avif");
+    --urgot-forajido: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/banners/Urgot_HighNoonSkin.avif");
+
+ }
+
+ .skin-container{
+    background-size: cover;
+ }
+
+ #urgot_original{
+    background-image: var(--urgot-original);
+ }
+
+ #urgot_carnicero{
+    background-image: var(--urgot-carnicero);
+ }
+
+ #urgot_crabgot{
+    background-image: var(--urgot-crabgot);
+ }
+
+ #urgot_cosplay{
+    background-image: var(--urgot-cosplay);
+ }
+
+ #urgot_terror{
+    background-image: var(--urgot-terror);
+ }
+
+ #urgot_belico{
+    background-image: var(--urgot-belico);
+ }
+
+ #urgot_forajido{
+    background-image: var(--urgot-forajido);
+ }
+ /* #endregion */
