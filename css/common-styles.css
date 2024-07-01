@@ -31,6 +31,7 @@ body {
     position:sticky;
     top: 0;
     z-index: 3;
+    background-color: #0A0A0C;
 }
 
 .tab-panel {
@@ -40,7 +41,7 @@ body {
 }
 
 .btn-tab-panel {
-    height: 100%;
+    height: 60px;
     width: auto;
     padding: 0 8px;
     display: inline-flex;
@@ -154,8 +155,24 @@ hr {
 }
 
 .text-banner > .subtitle {
-    font-size: clamp(14px, 5vw, 24px);;
+    font-size: clamp(14px, 5vw, 24px);
     word-wrap: break-word;
 }
 
 /* #endregion */
+footer{
+    margin-top: 30px;
+    color: var(--lol-text-color);
+    background-color: #111318;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+#social-media > a{
+    color: var(--lol-text-color);
+    text-decoration: none;
+}
